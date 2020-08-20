@@ -1,3 +1,4 @@
+#https://wikidocs.net/14
 # 숫자형
 num1 = 123
 # 실수형
