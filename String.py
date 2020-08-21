@@ -1,37 +1,3 @@
-#https://wikidocs.net/14
-# 숫자형
-num1 = 123
-# 실수형
-num2 = 1.2
-num3 = 4.24E10
-# 8진수
-num4 = 0o177
-# 16진수
-num5 = 0xABC
-
-print(num1)
-print(num2)
-print(num3)
-print(num4)
-print(num5)
-
-# 사칙연산
-num1 = 5
-num2 = 7
-print(num1 + num2)  # +
-print(num1 - num2)  # -
-print(num1 * num2)  # *
-print(num1 / num2)  # /
-
-# 제곱 연산
-print(num1 ** num2)
-
-# 나머지 연산
-print(num1 % num2)
-
-# 몫 반환 연산자
-print(num1 // num2)
-
 # 문자열 만들기
 "Hello World"
 'Hello World'
@@ -102,3 +68,39 @@ print(f'my name is {name}. my age is {age}')
 # f문자열 포매팅 with Dictionary(python 3.6 부터)
 d = {'name': 'kim', 'age': 3000}
 print(f'my name is {d["name"]}. my age is {d["age"]}')
+
+
+str = "tester"
+# 해당 문자 포함 개수
+print(str.count('e'))
+
+# 처음 만나는 해당 문자의 위치(인덱스) 찾기
+print(str.find('e'))  # 1
+print(str.find('j'))  # -1
+
+# 문자열 삽입
+print(','.join("abcdc"))
+
+# 대문자로 바꾸기
+print(str.upper())
+
+# 소문자로 바꾸기
+uppercase = "TEST"
+print(uppercase.lower())
+
+# 특정문자 지우기
+blankStr = "    test     "
+print("left")
+print(blankStr.lstrip())
+print("right")
+print(blankStr.rstrip())
+print("left right both")
+print(blankStr.strip())
+
+#문자열 바꾸기
+str2 = "Life is Too Short"
+print(str2.replace("Short", "Long"))
+
+#문자열 나누기
+str3 = "This is Long Time"
+print(str3.split())
