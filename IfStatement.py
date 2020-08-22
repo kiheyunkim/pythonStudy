@@ -65,8 +65,9 @@ print('t' in testString)
 print('a' in testString)
 
 # pass 조건문의 내용을 뛰어넘는 것
-if (3 in testList):
+if 3 in testList:
     pass  # 없다는 것을 명시한다. 만약 pass가 없으면 else는 불가능하다.
+    # 밑에 만약 내용이 있으면 실행된다. 뛰어 넘을 것이면 다른걸 써야한다.
 else:
     print("출력이 안되었어요")
 
