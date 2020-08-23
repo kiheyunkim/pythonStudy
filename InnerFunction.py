@@ -124,3 +124,76 @@ print(isinstance(b, B))
 print(len("python"))
 print(len([1, 2, 3, 4]))
 print(len(["python", 1, 'a', {1: 3, 4: 2}]))
+
+# 16 list() 반복 가능한 자료형을 리스트로 만들어줌
+print(list("1234567"))
+print(list((1, 2, 3, 4, 5, 6)))
+
+
+# 17 map(function, iterable) 입력받은 자료형의 각 요소를 함수 f가 수행한 결과를 묶어서 돌려준다
+
+
+def fucntion(x):
+    return x * x
+
+
+# 함수 전달
+print(list(map(fucntion, [1, 2, 3, 4])))
+# 람자 전달
+print(list(map(lambda x: x * x * x, [1, 2, 3, 4, 5, 6, 7, 8, 9, 10])))
+
+# 18 max(iterable) 는 인수로 반복가능 자료형을 받아 최대값을 돌려줌
+print(max([1, 9, 0, 10, 2, 4, 6, 101]))
+print(max("pythonjavacplusplus"))
+
+# 19 max(iterable) 는 인수로 반복가능 자료형을 받아 최소값을 돌려줌
+print(min([1, 9, 0, 10, 2, 4, 6, 101]))
+print(min("pythonjavacplusplus"))
+
+# 20 oct() 정수 형태의 숫자를 8진수 자열로 바꾸어줌
+print(oct(34))
+print(oct(12345))
+
+# 30 open : 파일열기 : 옵션 -> w 쓰기 r 읽기 a 추가모드 b 바이너리모드
+f = open("test.txt", "w", encoding="UTF-8")
+
+# 31 ord 아스키 코드 값을 돌려주는 함수
+print(ord('a'))
+print(ord('Z'))
+
+# 32 pow(x,y) x의 y승을 돌려줌
+
+print(pow(2, 10))
+print(pow(2, 31))
+print(pow(2, 63))
+
+# 33 range(start,stop,setp) for문과 함께 자주 사용하는 함수, 범위값을 반복 가능한 객체로 만들어줌
+print(list(range(0, 10)))
+print(list(range(0, 10, 2)))
+
+# 34 round : 반올림을 해주는 함수
+print(round(4, 2))
+print(round(4, 6))
+
+# 35 sorted(iterable) 함수는 입력값을 정렬한 후 그 결과를 리스트로 돌려줌
+print(sorted([3, 1, 7, 3, 4, 2]))
+
+# 36 str(object) 문자열 형태로 객체를 변환하여 돌려주는 함수
+print(type(3))
+print(3)
+print(type(str(3)))
+print(str(3))
+
+# 37 sum(iterable) 은 입력받은 리스트나 튜플의 요소합을 돌려줌
+print(sum([1, 4, 6, 2, 5]))
+print(sum((1, 4, 6, 2, 5)))
+
+# 38 type(object) 입력 값의 자료형이 무엇인지 알려주는 함수
+print(type("abcdef"))
+print(type([1, 2, 3]))
+print(type((1, 2, 3)))
+
+# 39 zip 동일한 개수로 이루어진 자료형을 묶어 주는 역할을 하는 함수이다
+print(list(zip([1, 2, 3], [4, 5, 6])))
+print(list(zip([1, 2, 3], [4, 5, 6], [7, 8, 9])))
+print(list(zip("abcdef", "ghijkl")))
