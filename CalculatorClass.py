@@ -22,20 +22,6 @@ class Calculator:
         return self.first / self.second
 
 
-c = Calculator(0, 0)
-c.setdata(10, 20)
-print(c.add())
-print(c.sub())
-print(c.mul())
-print(c.div())
-
-c2 = Calculator(100, 2020)
-print(c2.add())
-print(c2.sub())
-print(c2.mul())
-print(c2.div())
-
-
 # 클래스의 상속
 class CalculatorExp(Calculator):
 
@@ -49,16 +35,6 @@ class CalculatorExp(Calculator):
         return self.first ** 3
 
 
-c3 = CalculatorExp(10, 40)
-print(c3.add())
-print(c3.sub())
-print(c3.mul())
-print(c3.div())
-print(c3.pow())
-print(c3.square())
-print(c3.cube())
-
-
 # 매소드의 오버라이딩
 class SafeCalculatorExp(CalculatorExp):
     def div(self):
@@ -68,11 +44,35 @@ class SafeCalculatorExp(CalculatorExp):
             return self.first / self.second
 
 
-c4 = SafeCalculatorExp(10, 0)
-print(c4.add())
-print(c4.sub())
-print(c4.mul())
-print(c4.div())
-print(c4.pow())
-print(c4.square())
-print(c4.cube())
+#이 파일이 이 파일이름으로 실행되었을 때만
+if __name__ == "__main__":
+    c = Calculator(0, 0)
+    c.setdata(10, 20)
+    print(c.add())
+    print(c.sub())
+    print(c.mul())
+    print(c.div())
+
+    c2 = Calculator(100, 2020)
+    print(c2.add())
+    print(c2.sub())
+    print(c2.mul())
+    print(c2.div())
+
+    c3 = CalculatorExp(10, 40)
+    print(c3.add())
+    print(c3.sub())
+    print(c3.mul())
+    print(c3.div())
+    print(c3.pow())
+    print(c3.square())
+    print(c3.cube())
+
+    c4 = SafeCalculatorExp(10, 0)
+    print(c4.add())
+    print(c4.sub())
+    print(c4.mul())
+    print(c4.div())
+    print(c4.pow())
+    print(c4.square())
+    print(c4.cube())
