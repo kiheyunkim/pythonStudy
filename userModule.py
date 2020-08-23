@@ -1,7 +1,7 @@
 # 모듈의 사용 
 # *는 모든것을 의미
 # 파일명 으로 부터 어떤걸 가져올지를 지정 py는 생략
-from CalculatorClass import *
+from calculatorClass import *
 
 cal = SafeCalculatorExp(10, 2)
 
